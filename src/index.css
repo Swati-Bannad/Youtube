@@ -1,0 +1,41 @@
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow-x: hidden
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.video-card:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.video-card .video-title{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.watch-wrap iframe {
+  height: 400px;
+  width: 700px;
+}
